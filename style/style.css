@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --corTxtHeader: #88b19a;
+    --corFundoHead: #116234;
+    --corFundoMain: #202020;
+    --corFundoNav: #002912;
+    --corTxtNav: #116234;
+    --corTxtMain: #7e7e7e;
+    --corH1: #478864;
+    --corBody: #282828;
+    --corHoverNav: #2d8051;
+
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'kBebas Neue', sans-serif;
+    --font-android: 'Android', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--corBody);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    background-color: var(--corFundoHead);
+}
+
+header > p {
+    color: var(--corTxtHeader);
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+header > h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: var(--corTxtHeader);
+    font-family: var(--fonte-destaque);
+}
+
+nav {
+    background-color: var(--corFundoNav);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.114);
+}
+
+nav > a {
+    color: var(--corTxtNav);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--corHoverNav);
+    color: var(--corFundoNav);
+    border-radius: 5px
+}
+
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--corFundoMain);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.362);
+}
+
+main p {
+    margin: 10px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+main strong {
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--corH1);
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main h1 {
+    color: var(--corFundoHead);
+    font-family: var(--fonte-padrao);
+    font-size: 1.8em;
+}
+
+main h2 {
+    font-family: var(--fonte-padrao);
+    font-size: 1.3em;
+    color: var(--corHoverNav);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+div.video {
+    margin-bottom: 30px;
+    padding-bottom: 59%;
+    position: relative;
+   
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--corHoverNav);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.092);
+}
+
+aside > h3 {
+    background-color: var(--corFundoNav);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px; 
+}
+
+aside a {
+    color: var(--corTxtHeader);
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    background-color: var(--corFundoNav);
+    color: var(--corTxtNav);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
