@@ -39,6 +39,10 @@ a.externo::after {
     content: '\00A0\1F517';
 }
 
+p {
+    color: #787878;
+}
+
 header {
     min-height: 150px;
     text-align: center;
@@ -157,7 +161,12 @@ div.video > iframe {
     height: 90%;
 }
 
+aside p {
+    color: rgb(170, 164, 164);
+}
+
 aside {
+    color: rgb(170, 164, 164);
     background-color: var(--corHoverNav);
     padding: 10px;
     border-radius: 12px;
